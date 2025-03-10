@@ -11,7 +11,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Running tests...'
-                sh './hello_exec' // Running the compiled file
+                sh './non_existent_file' // Running the compiled file
             }
         }
         stage('Deploy') {
